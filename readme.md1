@@ -1,0 +1,59 @@
+# 🌿 Git Branching Strategy – Standard Operating Procedure (SOP)
+
+> **Document Version:** 1.0  
+> **Last Updated:** YYYY-MM-DD  
+> **Owner:** Engineering Team  
+
+---
+
+## 📌 Purpose
+
+This document defines the **standard Git branching strategy** to be followed across the project.  
+It ensures:
+
+- Stable production releases  
+- Structured development workflow  
+- Efficient collaboration  
+- Controlled hotfixes and releases  
+
+---
+
+## 🧭 Branch Overview
+
+| Branch Type | Name Pattern | Purpose |
+|------------|-------------|--------|
+| Main | `main` | Production-ready code |
+| Development | `develop` | Integration branch |
+| Feature | `feature/*` | New features |
+| Bugfix | `bugfix/*` | Non-critical fixes |
+| Release | `release/*` | Pre-production stabilization |
+| Hotfix | `hotfix/*` | Critical production fixes |
+
+---
+
+## 🌳 Branch Definitions
+
+### 🔒 Main Branch (`main`)
+- Contains **production-ready** code only
+- Always stable and deployable
+- ❌ Direct commits are **not allowed**
+- ✅ Changes only via **approved Pull Requests**
+- Used for **production deployments**
+
+---
+
+### 🧪 Development Branch (`develop`)
+- Contains the latest integrated development code
+- Acts as the base for all feature and bugfix branches
+- Used for **QA and integration testing**
+
+---
+
+### ✨ Feature Branch (`feature/*`)
+Used to develop **new features or enhancements**
+
+- **Created from:** `develop`
+- **Merged into:** `develop`
+- **Naming Convention:**
+  ```bash
+  feature/<feature-name>
