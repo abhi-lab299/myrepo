@@ -47,3 +47,15 @@ This SOP applies to:
 - Naming convention:
   ```bash
   feature/<feature-name>
+  ---
+
+## 👤 Abhishek Das
+
+DevOps
+
+![Author Image](./author-image.png)
+
+---
+
+© 2026 Soul Gamer. All rights reserved.
+
