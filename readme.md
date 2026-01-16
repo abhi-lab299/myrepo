@@ -53,7 +53,7 @@ This SOP applies to:
 
 DevOps
 
-![Author Image](./author-image.png)
+![Author Image](https://github.com/abhi-lab299/myrepo/blob/main/WhatsApp%20Image%202026-01-16%20at%209.39.22%20AM.jpeg?raw=true)
 
 ---
 
