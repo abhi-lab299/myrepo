@@ -1,59 +1,58 @@
-# 🌿 Git Branching Strategy – Standard Operating Procedure (SOP)
 
-> **Document Version:** 1.0  
-> **Last Updated:** YYYY-MM-DD  
-> **Owner:** Engineering Team  
+←←←←←→→→→→ What is Docker ?
 
----
+Docker is a container-based virtualization technology that uses OS-level isolation to run applications in self-contained environments,
+sharing the host operating system kernel while remaining independent from each other.
 
-## 📌 Purpose
+📦 What is a Container?
 
-This document defines the **standard Git branching strategy** to be followed across the project.  
-It ensures:
+A container includes:
 
-- Stable production releases  
-- Structured development workflow  
-- Efficient collaboration  
-- Controlled hotfixes and releases  
+Application source code
 
----
+Runtime (e.g., Java, Node.js, Python)
 
-## 🧭 Branch Overview
+System libraries
 
-| Branch Type | Name Pattern | Purpose |
-|------------|-------------|--------|
-| Main | `main` | Production-ready code |
-| Development | `develop` | Integration branch |
-| Feature | `feature/*` | New features |
-| Bugfix | `bugfix/*` | Non-critical fixes |
-| Release | `release/*` | Pre-production stabilization |
-| Hotfix | `hotfix/*` | Critical production fixes |
+Environment variables
 
----
+Configuration files
 
-## 🌳 Branch Definitions
+✅ All bundled into one executable unit
 
-### 🔒 Main Branch (`main`)
-- Contains **production-ready** code only
-- Always stable and deployable
-- ❌ Direct commits are **not allowed**
-- ✅ Changes only via **approved Pull Requests**
-- Used for **production deployments**
+⚙️»»»»»» How Docker Works
 
----
+Application
+    ↓
+Docker Image
+    ↓
+Docker Container
+    ↓
+Runs on Docker Engine
+    ↓
+Host Operating System
 
-### 🧪 Development Branch (`develop`)
-- Contains the latest integrated development code
-- Acts as the base for all feature and bugfix branches
-- Used for **QA and integration testing**
 
----
+Docker uses:
 
-### ✨ Feature Branch (`feature/*`)
-Used to develop **new features or enhancements**
+Docker Engine – Core runtime
 
-- **Created from:** `develop`
-- **Merged into:** `develop`
-- **Naming Convention:**
-  ```bash
-  feature/<feature-name>
+Docker Images – Read-only templates
+
+Docker Containers – Running instances of images
+
+Dockerfile – Blueprint to build images
+
+🚀 Key Features
+
+         Feature	             Description
+
+  🧩   Lightweight	          Uses OS kernel instead of full OS
+
+  ⚡   Fast Startup	         Containers start in seconds
+  
+  🔁   Portable	             Runs the same on any system
+  
+  📈   Scalable	              Easy horizontal scaling
+  
+  🔒   Isolated	              Secure app-level isolation
