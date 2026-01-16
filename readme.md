@@ -1,4 +1,4 @@
-🚀 Docker
+🚀 DOCKER
 
 Docker is an open-source containerization platform that enables applications to be built, packaged, and executed in lightweight, isolated environments known as containers.
 
@@ -66,7 +66,9 @@ GitHub Container Registry
 
 
 🏗️ Application Deployment Models
+
 Traditional vs Virtualization vs Containerization
+
 🧱 1. Traditional Deployment (Bare-Metal)
 
 Traditional deployment is a model where applications are installed directly on a physical server along with the operating system and required dependencies.
