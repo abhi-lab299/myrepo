@@ -1,0 +1,11 @@
+Apiversion: apps/v1
+kind: statefilset
+metadata: 
+  name: sts
+spec: 
+  replicas:3
+  selector:
+    matchlabels:
+      app: nginx
+    template:
+      metadata:
